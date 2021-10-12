@@ -109,7 +109,7 @@ Além das bibliotecas citadas acima e estilizações em CSS, os seguintes framew
 - [Javascript](https://www.javascript.com/)
 - [Python](https://www.python.org/)
 
-# Pendências de projeto
+# Pendências do projeto
 
 Por conta do prazo do desafio, algumas funcionalidades não foram totalmente desenvolvidas até o dia de entrega do programa. Ficou pendente:
 
