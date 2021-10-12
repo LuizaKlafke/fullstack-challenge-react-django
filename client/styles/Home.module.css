@@ -1,0 +1,265 @@
+/* Estrutura do site */
+.home,
+.calculadora,
+.historico,
+.sobreMim {
+  background: #fff;
+  height: 60px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+	margin: 0 auto;
+	min-width: 875px;
+	max-width: 1180px;
+}
+
+.topo {
+  padding: 10px 0;
+	position: relative;
+}
+
+.logo {
+  background: url(../public/logo.png) no-repeat left top;
+  text-indent: -9000px;
+  height: 40px;
+}
+
+/* Barra de navegação */
+.menu {
+  position: absolute;
+  left: 300px;
+  top: 20px;
+}
+
+.menu ul li {
+  float: left;
+  padding-right: 50px;
+
+}
+.menu ul a {
+  letter-spacing: 1px;
+}
+
+.menu ul a:hover {
+  color: #808080;
+}
+
+.home .menu a.home,
+.calculadora .menu a.calculadora,
+.historico .menu a.historico,
+.sobreMim .menu a.sobreMim {
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #0099FF;
+  border-bottom:3px solid rgb(0, 153, 255);
+  cursor: text;
+  box-shadow: none;
+}
+
+.menu a.home:hover,
+.menu a.calculadora:hover,
+.menu a.sobreMim:hover {
+  color: #0099FF;
+}
+
+/* Área de conteúdos */
+.conteudo {
+  margin: 20px 0;
+  float: left;
+  width: 100%;
+}
+
+.primeira {
+  float: left;
+}
+
+.home .primeira {
+  margin-top: 120px;
+  width: 55%;
+}
+
+.calculadora .primeira {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+
+.segunda {
+  width: 45%;
+  height: 618px;
+  float: right;
+}
+
+.conteudo h1 {
+  font-size: 3.5em;
+  font-weight: normal;
+  padding-bottom: 50px;
+}
+
+@keyframes pisca {
+  from {
+    opacity: 1;
+    ;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.traco {
+  animation: pisca 1s infinite alternate;
+  display: inline;
+}
+
+.conteudo .destaque {
+  color: #0099FF;
+  display: inline;
+  font-weight: bold;
+}
+
+.conteudo p {
+ width: 100%;
+}
+
+@keyframes aparecer {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.imgPrincipal {
+  width: 100%;
+  animation: aparecer 1s;
+ }
+
+.comecar {
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #0099FF url(../public/arrow-icon.png) no-repeat center right 10px;
+  padding:  10px 40px 10px 10px;
+  margin-top: 50px;
+}
+
+.conteudo .comecar:hover,
+.conteudo .calcular:hover, 
+  .conteudo .limpar:hover {
+  background-color: #0078c8;
+}
+
+
+/* Rodapé */
+.footer {
+  padding: 30px 50px;
+  color: #DBE3EC;
+  clear: both;
+  background: #292929;
+}
+.footer h2 {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+.footer span {
+  font-size: 0.9em;
+  padding: 10px 0;
+}
+
+.footer .texto {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer img {
+  width: 40px;
+}
+.footer img {
+  width: 40px;
+}
+
+.footer .links li {
+  float: right;
+  padding-left: 20px;
+}
+
+/* Formatando imagem */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    ;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.imgForms {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 50px;
+  animation: surgir 1.5s;
+}
+
+
+/* Estilizando formulário */
+.containerParagrafo{
+  width: 50%;
+  margin: -30px auto 0 auto;
+}
+
+.formulario {
+  width: 50%;
+  height: 350px;
+  background-color: rgba(41, 41, 41, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  margin: 80px auto 40px auto;
+}
+
+.containerForms {
+  float: left;
+  margin: 0 30px;
+}
+
+input.entrada {
+  margin-bottom: 100px;
+  float: left;
+  width: 70%;
+  margin-right: 10px;
+  background: #fff url(../public/entrada-icon.png) no-repeat center left;
+  background-position: 5px;
+
+}
+
+input.resultado {
+  margin-right: 15px;
+  float: left;
+  background: #fff url(../public/bandeira-icon.png) no-repeat center left;
+  background-position: 5px;
+  width: 30%;
+}
+
+input.tempo {
+  background: #fff url(../public/cronometro-icon.png) no-repeat center left;
+  width: 30%;
+  background-position: 5px;
+  float: left;
+}
+
+input.calcular {
+  background: #0099FF url(../public/calculadora-icon.png) no-repeat center right 5px;
+}
+
+input.limpar {
+  background: #0099FF url(../public/limpar-icon.png) no-repeat center right 5px;
+}
